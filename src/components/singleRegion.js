@@ -8,10 +8,10 @@ const SingleRegion = ({regionName, fuels}) => {
         <p>
             {fuels.map((fuel) => {
                 return(
-                    <>
+                    <div class="data">
                         <p class="fuel">{Object.keys(fuel)[0]}: </p>
                         <p class="perc">{fuel[Object.keys(fuel)[0]]}%</p>
-                    </>
+                    </div>
                 )
             })}
         </p>

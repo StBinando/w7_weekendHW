@@ -117,7 +117,7 @@ console.log("xxx: ", xxx)
 // ***********************************************************************        
     return (
         <>
-        <h1>Electricity production GB on 03/12/2021</h1>
+        <h1>Electricity production GB on: 03/12/2021</h1>
         {/* <h1>Carbon Intensity data for past 24h for GB regions</h1> */}
 
         <div class="select">
@@ -136,7 +136,8 @@ console.log("xxx: ", xxx)
     } else{ // *********** wait for API to be downloaded *****************
         return(
             <div>
-            <h1>Carbon Intensity data for past 24h for GB regions</h1>
+            <h1>Electricity production GB on: 03/12/2021</h1>
+        {/* <h1>Carbon Intensity data for past 24h for GB regions</h1> */}
             <h1>loading...</h1>
             </div>
         )}
