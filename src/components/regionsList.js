@@ -5,13 +5,14 @@ const RegionList = ({regionPassedToDisplay}) => {
 
     return (
         <div>
-            {regionPassedToDisplay.map((region) =>{
+            {regionPassedToDisplay.map((region, index) =>{
 
                 return(
-                    <div class="country">
+                    <div className="country">
                     <SingleRegion
                         regionName = {Object.keys(region)}
                         fuels = {region[Object.keys(region)]}
+                        key = {index}
                     />
                     </div>
                 )

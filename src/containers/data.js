@@ -97,19 +97,11 @@ let dataByRegion = [];
 regionsNames.forEach((nameRegion) => {
     const fuelsAvgs = allEntriesByRegion(nameRegion)
     return dataByRegion.push({[nameRegion]:fuelsAvgs});
-})
-// console.log(dataByRegion)
-        
+})        
 
 let xxx = dataByRegion.filter((region) => {
-    // console.log("Object.keys(region): ", Object.keys(region)[0])
-    // console.log("selectedRegion: ", selectedRegion)
     return Object.keys(region)[0] === selectedRegion;
 })
-console.log("selectedRegion: ", selectedRegion)
-console.log("xxx: ", xxx)
-
-
 
 
 // ***********************************************************************
@@ -120,7 +112,7 @@ console.log("xxx: ", xxx)
         <h1>Electricity production GB on: 03/12/2021</h1>
         {/* <h1>Carbon Intensity data for past 24h for GB regions</h1> */}
 
-        <div class="select">
+        <div className="select">
             <h4>select country</h4>
             <SelectCountry onSelectChange={(regionName) => changeSelection(regionName)}/>
         </div>
